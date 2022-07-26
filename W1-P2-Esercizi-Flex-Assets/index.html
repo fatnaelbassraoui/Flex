@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media screen and (min-width: 320) {
+            body{width: 100%;}
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: #FEF7E2;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 25px;
+            align-items: center;
+            height: 60px;
+        }
+        nav div{
+            display: flex;
+            text-align: center;
+            width: 14VW;
+            height: 35px;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            background-color: #FFDF7E;
+            border-radius: 19px;
+            color: black;
+        }
+        
+        #shop{
+            height: 45px;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        h2{
+            text-align: center;
+        }
+        #img-honey{
+            align-self: center;
+            width: 25vw;
+            height: 300px;
+            border-top-left-radius: 70px;
+            border-top-right-radius: 70px;
+
+        }
+        #add-card{
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            align-content: space-around;
+            flex-wrap: wrap;
+            width: 25vw;
+            height: 170px;
+            background-color: rgb(254,247,226);
+            border-bottom-right-radius: 70px;
+            border-bottom-left-radius: 70px; 
+        }
+        #description{
+            display: flex;
+            
+        }
+        
+        .descrrip_price{
+            margin: 5px;
+            margin-top: 10px;
+        }
+    
+        #parice{
+            align-self: flex-end;
+            margin-left: 30px;
+            margin-left: 40px;
+        }
+        #card{
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            width: 16VW;
+            height: 30px;
+            margin-top: 30px;
+            background-color: #FFDF7E;
+            border-radius: 19px;
+            color: black;
+        }
+
+        #flex{
+            display: flex;
+            flex-direction: column;
+            margin-left: 8px;
+        }
+        #flex>h1 {
+            margin:0px;
+            margin-top:30px
+        }
+
+        #flex>p{
+            margin-top: 8px;
+            margin-bottom: 30px;
+        }
+        #post1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgb(254,247,226);
+            width: 45vw;
+            height: 260px;
+            margin-left: 10px;
+            border-top-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px; 
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+
+        .post1_img{
+            width: 300px;
+            height: 200px;
+        }
+        #post-text{
+            margin-left: 10px;
+            width: 20vw;
+        }
+        #post-text>h5{
+            color:#975e0e;
+        }
+        #post-text>p{
+            font-size: x-small;
+            color:#975e0e;
+        }
+        footer{
+            display: flex;
+            justify-content:center;
+            background-color: #FEF7E2;
+            margin-top: 50px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 25px;
+            align-items: center;
+            height: 60px;
+            
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div >Our Honey</div>
+        <div >Trace Honey</div>
+        <div id="shop"><img src="logo.png"> Shop</div>
+        <div >Fcilities</div>
+        <div>Contacts</div>
+
+    </nav>
+
+    <h2>Product card</h2>
+    <img id="img-honey"src="honey.jpg">
+    <div id="add-card">
+                      
+        <div >
+            <div id="description">
+                <div>
+                <h3 class="descrrip_price">100% Bio Honey</h3>
+                <h4 class="descrrip_price">Italian not treated</h4>
+            </div>
+                <div id="price" class="descrrip_price"> $75</div>
+            </div>
+        </div>
+        <div id="card" >
+                    Add to card
+        </div>
+    </div>
+    <div id="flex">
+        <h1> Flexible article</h1>
+        <p>Di seguito vedrai lo stesso componente che cambia in base alla dimensione del viewport tramite media queries </p>
+    </div>
+
+    
+<div id="post1">
+    <div id="post-img">
+        <img class="post1_img" src="honey.jpg">
+    </div>
+    <div id="post-text">
+        <h5>Our delicious honey</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, ad neque deserunt architecto voluptatibus autem magnam est ea,
+             quidem perspiciatis ducimus eveniet. Voluptates quod ea veniam tempora expedita voluptatibus repellat.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe corrupti, enim minus maxime eaque laboriosam numquam repudiandae quo modi distinctio? 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem a molestiae eius est rem aspernatur fuga 
+            
+        </p>
+        
+    </div>
+</div>
+<footer>
+    <div>
+        <a href="https://policies.google.com/privacy?hl=it">Privacy </a>
+    </div>
+</footer>
+</body>
+</html>
